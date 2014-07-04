@@ -1,0 +1,49 @@
+<htnl>
+   <head>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(
+          function(){
+           alert($('#elemento1').css('fontSize'));//indica el tamaño del texto en elemento 1
+            $('#elemento1').css('fontSize','50px');//modifica el tamaño del texto a 100 px del elemento1
+            alert($('#elemento1').css('fontSize'));//indica el tamaño del texto modificado
+            $('#elemento1').hide('slow');//oculta lo que tiene el elemento 1 lentamente
+            $('#elemento1').show('slow');//aparece el elemento 1 de nuevo 
+            $('#elemento1').click(//al dar click sobre el elemento 1 se va a ocultar
+                  function(){ 
+                  $(this).hide('slow');  
+            });
+            $("#elemento1").css("background-color","pink");//1. cambia el color de fondo del elemento1
+            $("#elemento1").html("<p>Rubi</p>");//2. remplaza el contenido html que haya dentro del elemento1 por Ruby
+             alert($('#elemento1').css('width'));//3. modifica el ancho del contenedor
+            $('#elemento1').css('width','120px');
+             alert($('#elemento1').css('width'));
+            $("#elemento1").before("<p>Practica</p>");//4. añade contenido html delante del elemento1
+            $("#elemento1").append("<p>Estefani</p>");//5.añade contenido html al contenedor con id=”elemento1”
+             $('#sumar').click(//6. suma de dos numeros
+	            function(){
+                alert(parseInt($('#si').val()) + parseInt($('#no').val()));
+            });
+            $("#elemento1").slideUp(300).delay(800).fadeIn(400);//7. retrasa la ejecución de las siguientes que estén en la cola.
+            
+          });
+            //$('.titulo')
+ 
+    </script>
+   </head>
+   <body>
+      <input type="text" id="si" />
+      <input type="text" id="no" />
+      <input type="button" id="sumar" value="Sumar"/>
+      <div id="container" class="elementos">
+         <h1 id="titulo">
+           <p class="parrafo" id="elemento1">Hola</p>
+         </h1>
+      </div>
+      <div>
+           <h1 id="titulo">Hola Mundo</h1>
+           <h2 id="titulo">Hola de nuevo</h2>
+      </div>
+   </body>
+</html>
+ 
