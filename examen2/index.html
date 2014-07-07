@@ -18,7 +18,23 @@
             $('#form1').hide('slow');
             $('#form2').hide('slow');
             $('#form3').hide('slow');
-            $('#form4').hide('slow');}
+            $('#form4').hide('slow');
+             $('#form0').click(
+                  function(){ 
+                   $('#form1').show('slow');
+                   $('#form2').show('slow');
+            });
+            $('#form5').click(
+                  function(){ 
+                   $('#form4').show('slow');
+                   $('#form3').hide('slow');
+            });
+             $('#form6').click(
+                  function(){ 
+                   $('#form4').hide('slow');
+                   $('#form3').show('slow');
+            });
+           }
           );  
       </script> 
     <nav class="navbar navbar-inverse"  role="navigation">
@@ -54,7 +70,7 @@
           <h1 class="text-left">
           <apan class=""><span>Examen 2<br/>
           <apan class=""><span>5 de Julio 14<br/><br/>
-           <input type="button" id="ver_formulario" value="formularios"/>
+           <input type="button" id="form0" value="formularios"/>
           </h1>
         </div>
     </div>
@@ -84,9 +100,9 @@
       <div class="col-md-4">
       <h2>Integrante</h2>
         <div class="btn-group" id="form2">
-           <button type="submit" class="btn btn-primary">Entrenador</button>
+           <input type="button" id="form5" value="Entrenador"/>
            <br/><br/><br/>
-           <button type="submit" class="btn btn-primary">Jugador</button>
+            <input type="button" id="form6" value="Jugador"/>
 
         </div>
       </div>
