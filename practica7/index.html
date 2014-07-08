@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/bootstrapValidator.min.css"/>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--Either use the compressed version (recommended in the production site)-->
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+
+    <!--Or use the original one with all validators included-->
+    <script type="text/javascript" src="js/bootstrapValidator.js"></script>
+
+
+    
+  </head>
+  <body>
+  
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"><br/>
+      <label>FORMULARIO 1</label>
+          <form id="form1">
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" name="username" />
+        </div>
+        <div class="form-group">
+            <label>Email address</label>
+            <input type="text" class="form-control" name="email" />
+        </div>
+        </form>
+      </div>
+     
+      <div class="col-md-4"><br/>
+    <label>FORMULARIO 2</label>
+     <div class="form-group">
+       <form id="form2">
+          <div class="form-group">
+              <input type="text" class="form-control" name="username" placeholder="Username" />
+          </div>
+          <div class="form-group">
+              <input type="text" class="form-control" name="email" placeholder="Email address" />
+          </div>
+      </form>
+      </div>
+    </div>
+      <div class='col-sm-4'><br/>
+    <label>FORMULARIO 3</label>
+    <form class="form-horizontal" id="form3">
+    <div class="form-group">
+        <label class="col-lg-3 control-label">Username</label>
+        <div class="col-lg-9">
+            <input type="text" class="form-control" name="username" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-3 control-label">Email address</label>
+        <div class="col-lg-9">
+            <input type="text" class="form-control" name="email" />
+        </div>
+    </div>
+</form>
+        </div>
+      <div class="col-md-12"><br/><br/>
+        <label>FORMULARIO REVISTA</label>
+          <form role="form" id="form4">
+               <div class="form-group">
+                  <label for="exampleInputEmail1">Nombre de la Revista:</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputFile">Portada:</label>
+                  <input type="file" id="portada">
+                </div>
+                <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                  <label for="exampleInputEmail1">Volumen:</label>
+                  <input type="text" class="form-control" id="vol" name="vol" placeholder="vol">
+                </div>
+            <div class="form-group">
+                  <label for="exampleInputEmail1">Titulo:</label>
+                  <input type="text" class="form-control" id="titulo" name="nombre">
+                </div>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Subtitulo:</label>
+                  <input type="text" class="form-control" id="subtitulo" name="nombre">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Numero:</label>
+                  <input type="text" class="form-control" id="num" name="nombre">
+                </div>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Clave:</label>
+                  <input type="text" class="form-control" id="clave" name="nombre">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Directorio:</label>
+                  <input type="text" class="form-control" id="dir" name="nombre">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Editorial:</label>
+                  <input type="text" class="form-control" id="ed" name="nombre">
+                  <div class="form-group">
+                  <label for="example">Status: </label>
+                  <select name="nombre">
+                  <option value="Sensurada">Sensurada</option>
+                  <option value="Para niños">Para niños</option>
+                  <option value="Empleos">Empleos</option>
+                  <option value="Cocina">Cocina</option>
+                  <option value="Para la mujer">Para la mujer</option>
+                  </select>
+                </div>
+                </div>
+                   
+           </form>
+        </div>
+      </div>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.es.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker({
+                   language: 'es'
+                });
+            });
+        $(function () {
+        $('#form1').bootstrapValidator({
+        fields: {
+            username: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email is required and cannot be empty'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            }
+        }
+    });
+  });
+  $(function () {
+        $('#form2').bootstrapValidator({
+        fields: {
+            username: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email is required and cannot be empty'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            }
+        }
+    });
+  });
+  $(function () {
+        $('#form3').bootstrapValidator({
+        fields: {
+            username: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email is required and cannot be empty'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            }
+        }
+    });
+  }); 
+   $(function () {
+        $('#form4').bootstrapValidator({
+        fields: {
+            nombre: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+           vol: {
+                validators: {
+                    notEmpty: {
+                        message: 'The volumen is required and cannot be empty'
+                    },
+                }
+            }
+        }
+    });
+  }); 
+        </script>
+
+  </body>
+</html>
