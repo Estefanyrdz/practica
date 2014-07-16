@@ -1,0 +1,146 @@
+     $(function () {   
+       $('#equipo').bootstrapValidator({
+        fields: {
+            nombre: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+          linea: {
+                validators: {
+                    notEmpty: {
+                        message: 'The status is required and cannot be empty'
+                    }
+                }
+            }
+        }
+    });
+  });
+  $(function () {
+        $('#continente').bootstrapValidator({
+        fields: {
+            nombre: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+        }
+    });
+  });
+  $(function () {
+        $('#estadio').bootstrapValidator({
+        fields: {
+            username: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            }
+        }
+    });
+  }); 
+  $(function () {   
+       $('#pais').bootstrapValidator({
+        fields: {
+            nombre: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+          linea: {
+                validators: {
+                    notEmpty: {
+                        message: 'The status is required and cannot be empty'
+                    }
+                }
+            }
+        }
+    });
+  });
+   $(function () {
+        $('#posicion').bootstrapValidator({
+        fields: {
+            nombre: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z]+$/,
+                        message: 'The username can only consist of alphabetical'
+                    }
+                }
+            },
+             abreviatura: {
+                message: 'The title is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The abreviatura is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The  abreviatura must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z]+$/,
+                        message: 'The  abreviatura can only consist of alphabetical'
+                    }
+                }
+            }
+        }
+    });
+  }); 
