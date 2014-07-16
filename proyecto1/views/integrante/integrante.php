@@ -54,7 +54,7 @@
 					<div id="container" class="elemento1">
 						<div>
 							<div class="form-group">
-							<form role="form" id="integrantes" action="" method="POST">
+							<form role="form" id="integrante" action="" method="POST">
 		                  <label for="nombre">Nombre:</label>
 		                  <input type="text" class="form-control" id="nombre" name="nombre">
                            </div>

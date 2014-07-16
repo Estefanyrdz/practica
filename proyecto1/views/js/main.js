@@ -189,8 +189,7 @@ $(document).ready(function() {
 					},		
 				}
 			});<!---Fin del formulario1->
-			<!--Estadio2, Ciudad2 (Nombre)-->
-			$('#formulario2').bootstrapValidator({
+			$('#estadio').bootstrapValidator({
 				message: 'Este valor no es válido',
 				feedbackIcons: {
 					valid: 'glyphicon glyphicon-ok',
@@ -214,11 +213,11 @@ $(document).ready(function() {
 								message: 'El nombre de usuario sólo puede consistir en alfabético, número y subrayado'
 							}
 						}
-					}
+					},
 				}
 				});<!--Fin del formulario2-->
-				<!--Pais (nombre)-->
-			$('#formulario3').bootstrapValidator({
+		
+			$('#pais').bootstrapValidator({
 				message: 'Este valor no es válido',
 				feedbackIcons: {
 					valid: 'glyphicon glyphicon-ok',
@@ -227,10 +226,10 @@ $(document).ready(function() {
 				},
 				fields: {
 					nombre: {
-						message: 'El nombre de la revista no es válido',
+						message: 'El nombre no es válido',
 						validators: {
 							notEmpty: {
-								message: 'Es necesario el nombre de usuario y no puede estar vacío'
+								message: 'Es necesario el nombre no puede estar vacío'
 							},
 							stringLength: {
 								min: 6,
@@ -242,10 +241,10 @@ $(document).ready(function() {
 								message: 'El nombre de usuario sólo puede consistir en alfabético, número y subrayado'
 							}
 						}
-					}
+					},
 				}
 				});<!--Fin del formulario3-->
-				$('#formulario4').bootstrapValidator({
+				$('#posicion').bootstrapValidator({
 				message: 'Este valor no es válido',
 				feedbackIcons: {
 					valid: 'glyphicon glyphicon-ok',
@@ -254,7 +253,7 @@ $(document).ready(function() {
 				},
 				fields: {
 					nombre: {
-						message: 'El nombre de la revista no es válido',
+						message: 'El nombre  no es válido',
 						validators: {
 							notEmpty: {
 								message: 'Es necesario el nombre de usuario y no puede estar vacío'
@@ -271,10 +270,10 @@ $(document).ready(function() {
 						}
 					},
 					abreviatura: {
-						message: 'El nombre de la revista no es válido',
+						message: 'la abreviatura no es válida',
 						validators: {
 							notEmpty: {
-								message: 'Es necesario el nombre de usuario y no puede estar vacío'
+								message: 'Es necesario que la abreviatura no este vacía'
 							},
 							stringLength: {
 								min: 6,
@@ -286,7 +285,7 @@ $(document).ready(function() {
 								message: 'El nombre de usuario sólo puede consistir en alfabético, número y subrayado'
 							}
 						}
-					}
+					},
 				}
 				});<!--Fin del formulario4-->
 			});<!---FIN DEL READY->
