@@ -63,11 +63,11 @@ class Revista extends Modelo{
         $this->nombre = trim($valor);
         
     }
-     /* public function get_portada(){
+     public function get_portada(){
         return $this->portada;
     } 
 
-    public function set_portada$valor){
+    public function set_portada($valor){
 
         $er = new Er();
         
@@ -78,8 +78,8 @@ class Revista extends Modelo{
                
         $this->portada = trim($valor);
         
-    }*/
-    /*/public function get_fecha(){
+    }
+    public function get_fecha(){
         return $this->fecha;
     } 
 
@@ -94,7 +94,7 @@ class Revista extends Modelo{
                
         $this->fecha = trim($valor);
         
-    }*/
+    }
        public function get_volumen(){
         return $this->volumen;
     } 

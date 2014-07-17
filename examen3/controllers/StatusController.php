@@ -15,6 +15,7 @@
 		   if(count($conti->errores)>0){
 		   	 print_r($conti->errores);
 		   }
+		   $conti->inserta($conti->get_atributos()); 
 		     die();
 
 		}

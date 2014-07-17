@@ -170,6 +170,29 @@ class Er {
 		     return false;
 		} 
 	}
+	public function valida_portada($valor) { 
+    $extensiones_permitidas = array(".gif", ".jpg", ".doc", ".pdf"); 
+    if (!$valor) { 
+     return false;
+    }else{ 
+       
+  	}
+
+}
+   public function valida_fecha($valor)
+{
+   $exp_reg ='/^(19|20)+([0-9]{2})([-])([0-9]{1,2})([-])([0-9]{1,2})$/';
+
+    if($valor.search($exp_reg)==0)
+    {
+        $values=$valor.split("-");
+        if(isValidDate($values["2"],$values["1"],$values["0"]))
+        {
+            return true;
+        }
+    }
+    return false;
+}
 
 }
 

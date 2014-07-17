@@ -19,7 +19,7 @@
 				<div class="col-md-6">
 					<form role="form" id="status" action="" method="POST">
 					  <div class="form-group">
-                         <h2 for="nombre">Formulario Status</h2>
+             <h2 for="nombre">Formulario Status</h2>
 						<label for="status">Status: </label>
 						<input type="text" class="form-control" id="status" name="status" placeholder="">
 					  </div>

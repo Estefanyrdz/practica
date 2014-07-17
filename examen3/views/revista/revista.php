@@ -54,7 +54,7 @@
         <div class="row">
             <div class="col-md-6">
                  <body background="revista.jpg">
-                    <form role="form" id="revista" action="" method="POST">
+                   <form role="form" id"revista" action="" method="POST">
                         <div class="form-group">
                            <h2 for="nombre">Formulario Revista</h2>
                             <label for="nombre">Nombre</label>

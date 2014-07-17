@@ -19,7 +19,7 @@
       }
     if(isset($_POST['abstract'])){
         $equipoC= new ArticuloController();
-        $equipoC->insertaIntegrante($_POST);
+        $equipoC->insertaArticulo($_POST);
       }
        if(isset($_POST['introduccion'])){
         $equipoC= new ArticuloController();
@@ -61,36 +61,33 @@
 		<div class="row">
             <div class="col-md-6">
                  <body background="articulo.jpg">
-                    <form role="form" id="articulo" action="" method="POST">
+                  <form role="form" id="articulo" action="" method="POST">
                         <div class="form-group">
                            <h2 for="nombre">Formulario Articulo</h2>
                             <label for="nombre">Nombre</label>
                             <input type="text" class="form-control" id="nombre" name="nombre" />
                         </div>
-                        <div>
-                             <div class="form-group">
+                         <div class="form-group">
                             <label for="resumen">Resumen: </label>
-                            <input type="text" class="form-control"id="resumen" name="resumen">
+                            <textarea type="text" class="form-control"id="resumen" name="resumen"></textarea>
                         </div>
                         <div>
                              <div class="form-group">
                             <label for="abstract">Abstract: </label>
-                            <input type="text" class="form-control"id="abstract" name="abstract">
+                            <textarea type="text" class="form-control"id="abstract" name="abstract"></textarea>
                         </div>
-                         <div>
-                             <div class="form-group">
+                           <div class="form-group">
                             <label for="introduccion">Introduccion: </label>
-                            <input type="text" class="form-control"id="introduccion" name="introduccion">
+                            <textarea type="text" class="form-control"id="introduccion" name="introduccion"></textarea>
                         </div>
-                        <div>
-                             <div class="form-group">
+                         <div class="form-group">
                             <label for="metodologia">Metodologia: </label>
-                            <input type="text" class="form-control"id="metodologia" name="metodologia">
+                            <textarea type="text" class="form-control"id="metodologia" name="metodologia"></textarea>
                         </div>
                          <div>
                              <div class="form-group">
                             <label for="contenido">Contenido: </label>
-                            <input type="text" class="form-control"id="contenido" name="contenido">
+                            <textarea type="text" class="form-control"id="contenido" name="contenido"></textarea>
                         </div>
                         <div class="form-group">
                              <label for="fecha_creacion">Fecha: </label>
@@ -117,7 +114,7 @@
                         </div>
                         <div class="form-group">
                             <label for="conclusiones">Conclusiones</label>
-                            <input type="text" class="form-control" id="conclusiones" name="conclusiones" />
+                            <textarea type="text" class="form-control" id="conclusiones" name="conclusiones" /></textarea>
                         </div>
                         <div class="form-group">
                             <label for="agradecimientos">Agradecimientos</label>
