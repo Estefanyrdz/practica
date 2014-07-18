@@ -26,7 +26,7 @@
        <div class="row">
         <body background="fifa.jpg">
         <div class="col-md-6">
-          <form role="form" id="equipo" action="" method="POST">
+          <form role="form" id="equipo" action="" method="POST" enctype="multipart/form-data">
                <div class="form-group">
                   <label for="nombre">Nombre:</label>
                   <input type="text" class="form-control" id="nombre" name="nombre">

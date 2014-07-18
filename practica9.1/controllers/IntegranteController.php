@@ -16,7 +16,8 @@
 		    $int->set_peso($datos['peso']); 
 		    $int->set_edad($datos['edad']); 
 		    $int->set_estatura($datos['estatura']); 
-		    $int->set_foto($datos['foto']);
+		  $int->set_foto($_FILES['foto']['name']);
+		     move_uploaded_file($_FILES['foto']['tmp_name'],"../img/".$_FILES['foto']['name']);
 		   if(count($int->errores)>0){
 		   	 print_r($int->errores);
 		   }
