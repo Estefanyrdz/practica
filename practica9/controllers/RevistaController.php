@@ -8,8 +8,7 @@
 		public function insertaRevista($datos){
 			
 			$conti = new Revista();
-			$conti->set_nombre($datos['nombre']); 
-			//$conti->set_portada($datos['portada']);  
+			$conti->set_nombre($datos['nombre']);  
 			$conti->set_fecha($datos['fecha']); 
 		    $conti->set_volumen($datos['volumen']);
 		    $conti->set_titulo($datos['titulo']); 
